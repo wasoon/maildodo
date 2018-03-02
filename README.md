@@ -3,6 +3,14 @@
 
 使用 composer 的安装方法：
 
+在项目根目录下增加composer.json文件并加入以下代码：
+
+    "require": {
+        "wasoon/maildodo": "^1.1"
+    }
+
+然后在命令行执行以下安装命令：
+
 `composer require wasoon/maildodo`
 
 composer 安装后的使用方法：
