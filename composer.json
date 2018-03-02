@@ -1,13 +1,13 @@
 {
     "name": "wasoon/maildodo",
     "description": "邮多多邮件发送器",
-    "homepage": "http://www.maildodo.cn/"
+    "homepage": "https://github.com/wasoon/maildodo"
     "license": "MIT",
     "authors": [
         {
             "name": "Wilson",
             "email": "Wilson@wasoon.cn",
-            "homepage": "https://github.com/wasoon/maildodo",
+            "homepage": "",
             "role": "Developer"
         }
     ],
