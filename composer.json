@@ -26,7 +26,7 @@
         "php": ">=5.4"
     },
     "suggest": {
-        "ext-event": "For better Mail Marketing. "
+        "ext-curl": "For better performance. "
     },
     "autoload": {
         "psr-4": {
