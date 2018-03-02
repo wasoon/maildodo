@@ -29,7 +29,10 @@
     },
     "autoload": {
         "psr-4": {
-            "maildodo\\": "./"
+            "MailDoDo\\": "./"
         }
-    }
+    },
+
+    "prefer-stable": true,
+    "minimum-stability": "dev",
 }
