@@ -1,0 +1,8 @@
+{
+    "name": "wasoon/maildodo",
+    "description": "邮多多邮件发送器",
+    "require": {
+        "php": "^5.4",
+        "another-vendor/package": "1.*"
+    }
+}
