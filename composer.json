@@ -1,4 +1,37 @@
 {
     "name": "wasoon/maildodo",
-    "description": "邮多多邮件发送器"
+    "type": "library",
+    "keywords": [
+        "mail",
+    ],
+    "homepage": "http://www.maildodo.cn",
+    "license": "MIT",
+    "description": "邮多多邮件发送器",
+    "authors": [
+        {
+            "name": "Wilson",
+            "email": "Wilson@wasoon.cn",
+            "homepage": "http://www.maildodo.cn",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "Wilson@wasoon.cn",
+        "issues": "https://github.com/wasoon/maildodo/issues",
+        "forum": "http://forum.maildodo.cn/",
+        "wiki": "http://docs.maildodo.cn/",
+        "source": "https://github.com/wasoon/maildodo"
+    },
+    "require": {
+        "php": ">=5.4"
+    },
+    "suggest": {
+        "ext-event": "For better Mail Marketing. "
+    },
+    "autoload": {
+        "psr-4": {
+            "maildodo\\": "./"
+        }
+    },
+    "minimum-stability": "dev"
 }
