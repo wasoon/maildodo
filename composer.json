@@ -1,8 +1,22 @@
 {
     "name": "wasoon/maildodo",
     "description": "邮多多邮件发送器",
+    "homepage": "http://www.maildodo.cn/"
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wilson",
+            "email": "Wilson@wasoon.cn",
+            "homepage": "https://github.com/wasoon/maildodo",
+            "role": "Developer"
+        }
+    ],
     "require": {
-        "php": "^5.4",
-        "another-vendor/package": "1.*"
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "maildodo": "src"
+        }
     }
 }
