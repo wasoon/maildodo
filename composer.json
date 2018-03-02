@@ -11,22 +11,21 @@
         {
             "name": "Wilson",
             "email": "Wilson@wasoon.cn",
-            "homepage": "http://www.maildodo.cn",
             "role": "Developer"
         }
     ],
     "support": {
         "email": "Wilson@wasoon.cn",
         "issues": "https://github.com/wasoon/maildodo/issues",
-        "forum": "http://forum.maildodo.cn/",
         "wiki": "http://docs.maildodo.cn/",
         "source": "https://github.com/wasoon/maildodo"
     },
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+	"ext-curl": "*"
     },
     "suggest": {
-        "ext-curl": "For better performance. "
+        "ext-xdebug": "*"
     },
     "autoload": {
         "psr-4": {
