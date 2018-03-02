@@ -6,6 +6,7 @@
 `composer require wasoon/maildodo`
 
 composer 安装后的使用方法：
-在您的PHP公共脚本或是需要调用的文件里引入 composer 自动加载文件：
+
+1、在您的PHP公共脚本或是需要调用的文件里引入 composer 自动加载文件：
 
 `require 'vendor/autoload.php';`
