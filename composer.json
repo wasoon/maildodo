@@ -2,7 +2,7 @@
     "name": "wasoon/maildodo",
     "type": "library",
     "keywords": [
-        "mail",
+        "mail"
     ],
     "homepage": "http://www.maildodo.cn",
     "license": "MIT",
