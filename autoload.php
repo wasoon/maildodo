@@ -1,23 +1,44 @@
 <?php
 /**
- * This file is part of MailDoDo.
+ * MailDoDo 自动加载文件
  *
  * Licensed under The MIT License
  * For full copyright and license information, please see the MIT-LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
  * @author    Wilson<Wilson@wasoon.cn>
- * @copyright Wilson<Wilson@wasoon.cn>
+ * @copyright Copyright (C) 2018, WaSoon Inc. All rights reserved.
  * @link      http://www.maildodo.cn/
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 namespace MailDoDo;
 
-class SLoader
+class WaSoonLoader
 {
     private static function _autoload ($class_name)
     {
+        if (0 === stripos($class_name, __NAMESPACE__ ))
+        {
+            $class_path = str_replace('\\', DIRECTORY_SEPARATOR, $class_name);
+            $fileName = substr($class_path, strlen(__NAMESPACE__) + 1);
+            if (0 === stripos($class_name, __NAMESPACE__ . '\\'))
+            {
+                $class_file = (__DIR__ . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . $fileName . '.php');
+            }
+                
+            if(empty($class_file) || !is_file($class_file)) {
+                $class_file = (__DIR__ . DIRECTORY_SEPARATOR . $class_path . '.php');
+            }
+            
+            #var_dump($class_file);
+            
+            if(is_file($class_file))
+            {
+                return (require $class_file);
+            }            
+        }
         
+        return false;
     }
     
     public static function setup()
@@ -26,4 +47,4 @@ class SLoader
     }
 }
 
-SLoader::setup();
+WaSoonLoader::setup();
