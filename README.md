@@ -13,7 +13,7 @@
 
 `composer require wasoon/maildodo`
 
-或安装开发版：
+或使用以下命令安装开发版：
 
 `composer require wasoon/maildodo:dev-master`
 

@@ -49,7 +49,7 @@ class MailDoDo
         }
         
         $sign = self::createSign($params);
-        $url = (self::$_apiUrl . '?c=rest&api=send&a=' . self::$_version . '&app_id=' . self::$_appid . "&sign={$sign}");
+        $url = (self::$_apiUrl . '?a=' . self::$_version . '&api=send&a=' . self::$_version . '&app_id=' . self::$_appid . "&sign={$sign}");
         #var_dump($params, $url);
         $contents = self::getResources(
             array( 'urls' => $url,
