@@ -29,11 +29,10 @@
     },
     "autoload": {
         "psr-4": {
-            "MailDoDo": "",
             "MailDoDo\\": "./src"
         },
         "classmap": [
-            "src/"
+            "MailDoDo.php"
         ]
     },
 
