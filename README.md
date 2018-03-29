@@ -12,6 +12,8 @@
 然后在命令行执行以下安装命令：
 
 `composer require wasoon/maildodo`
+或安装开发版：
+`composer require wasoon/maildodo:dev-master`
 
 composer 安装后的使用方法：
 
