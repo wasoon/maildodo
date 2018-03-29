@@ -22,7 +22,6 @@
  */
 namespace MailDoDo;
 
-#require dirname(__DIR__) . DIRECTORY_SEPARATOR . 'autoload.php';
 class Transmitter extends \MailDoDo
 {
 }
