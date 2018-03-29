@@ -22,15 +22,19 @@
     },
     "require": {
         "php": ">=5.4",
-	"ext-curl": "*"
+	    "ext-curl": "*"
     },
     "suggest": {
         "ext-xdebug": "*"
     },
     "autoload": {
         "psr-4": {
-            "MailDoDo\\": "./"
-        }
+            "MailDoDo\\": "./",
+            "MailDoDo\\": "./src"
+        },
+        "classmap": [
+            "src/"
+        ]
     },
 
     "prefer-stable": true,

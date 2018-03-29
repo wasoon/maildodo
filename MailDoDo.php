@@ -85,15 +85,15 @@ class MailDoDo
      * @param  bool  $getInfo 是否返回连接资源句柄信息，TRUE 返回，FALSE 不返回
      * @return array          返回获取到的资源链接
      *
-     * @example $contents = Sun_Http_Request::getResources('http://www.baidu.com/', 1);
+     * @example $contents = MailDoDo::getResources('http://www.maildodo.cn/', 1);
      *
-                $contents = Sun_Http_Request::getResources(array('http://www.baidu.com/', 'http://www.google.com.hk/'), 1);
+                $contents = MailDoDo::getResources(array('http://www.maildodo.cn/', 'http://www.maildo.cn/'), 1);
 
                 // 该调用方法参数可以不对应，但urls必须存在
                 // 未定义'method'时默认为 GET, postData 可以是GET或DELETE方法时的URL，也可以是POST时的数据
                 // timeOut按urls对齐，如果未设置则自动使用getResources方法参数二的值
-                $contents = Sun_Http_Request::getResources(
-                    array( 'urls' => array('http://www.baidu.com/', 'http://www.google.com.hk/'),
+                $contents = MailDoDo::getResources(
+                    array( 'urls' => array('http://www.maildodo.cn/', 'http://www.maildo.cn/'),
                            'timeOut' => array(5),
                            'method' => 'POST',
                            'postData' => array('test' => 'postdatas') )
